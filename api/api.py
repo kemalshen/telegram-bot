@@ -3,9 +3,9 @@ import json
 import time
 import logging
 from typing import Dict, Any, Optional
-from config import BOT_TOKEN, CHANNEL_USERNAME, LOGGING_CONFIG
-from simple_database import SimpleDatabaseManager
-from post_formatter import PostFormatter
+from api.config import BOT_TOKEN, CHANNEL_USERNAME, LOGGING_CONFIG
+from api.simple_database import SimpleDatabaseManager
+from api.post_formatter import PostFormatter
 
 # Setup logging
 logging.basicConfig(
@@ -262,11 +262,3 @@ class SimpleTelegramBot:
             except Exception as e:
                 logger.error(f"Error in main loop: {e}")
                 time.sleep(5)  # Wait before retrying
-
-def main():
-    """Main function"""
-    bot = SimpleTelegramBot(BOT_TOKEN)
-    bot.run()
-
-if __name__ == "__main__":
-    main() 
