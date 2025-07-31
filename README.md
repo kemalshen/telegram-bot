@@ -1,4 +1,4 @@
-# ZalogAvtoUz Telegram Bot
+# Buy_car_Uzbekistan Telegram Bot
 
 A professional Telegram bot for managing and publishing car listings from banks' confiscated vehicle databases.
 
